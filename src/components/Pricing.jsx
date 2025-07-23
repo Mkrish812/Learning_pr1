@@ -93,7 +93,7 @@ export default function Pricing() {
 
       <p className="text-gray-500">Save up to 15% with Annual Plan.</p>
 
-      <div className="flex flex-col px-10   md:flex-row w-full  gap-10 md:gap-y-20 mt-5 md:mt-10 justify-center items-center ">
+      <div className="flex flex-col md:px-10   md:flex-row w-full  gap-10 md:gap-y-20 mt-5 md:mt-10 justify-center items-center ">
         {pricingPlans.map((prc) => (
           <div
             key={prc.name}
@@ -102,7 +102,6 @@ export default function Pricing() {
             <img className=" w-28 " src={prc.image} alt="" />
             <h1 className="text-2xl font-bold ">{prc.name}</h1>
             <h1 className="text-3xl font-bold ">
-              {" "}
               <span className="text-lg"> &#x20B9;</span>
               {prc.price}
             </h1>

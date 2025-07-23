@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className=" flex flex-col md:flex-row md:flex-1 flex-wrap gap-5 justify-between mb-5 ">
+      <div className=" flex flex-col md:flex-row md:flex-1 flex-wrap gap-5 justify-between mb-10 ">
         <div className="flex flex-col gap-2">
           <h4 className="font-semibold text-white  ">Company</h4>
           <p className="">About</p>

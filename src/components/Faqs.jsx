@@ -50,7 +50,7 @@ export default function Faqs() {
       <div className="flex w-full mt-2 ">
         <div className="flex flex-col flex-1 p-5 md:px-10 mx-3  shadow-xl rounded-2xl">
           {faqs.map((fq) => (
-            <div className= {`${fq.id == wDown ? 'max-h-96' :'max-h-16 ' } border-b  border-gray-200 overflow-hidden transition-all duration-700 ease-in-out `} key={fq.id}>
+            <div className= {` border-b  border-gray-200 overflow-hidden transition-all duration-700 ease-in-out `} key={fq.id}>
               <h1
                 onClick={()=> handleDrop(fq.id)}
                 className="font-bold mt-3 flex justify-between py-3 "
@@ -58,7 +58,7 @@ export default function Faqs() {
                 {fq.question}
                 <ChevronDown className= {`${fq.id == wDown ? '-rotate-180 ' :'rotate-0 ' } transition-all duration-700 ease-in-out `} strokeWidth={1.5} />
               </h1>
-              <p className="text-sm text-gray-500 py-2">{fq.answer}</p>
+              <p className={`${fq.id == wDown ? 'max-h-96 py-2' :'max-h-0 ' } text-sm text-gray-500  transition-all duration-700 ease-in-out `} >{fq.answer}</p>
             </div>
           ))}
         </div>
