@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'Learning_pr1/',
+  base: '/Learning_pr1/',
   plugins: [react(),tailwindcss()]
 })
