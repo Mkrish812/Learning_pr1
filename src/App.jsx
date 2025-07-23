@@ -7,6 +7,10 @@ import ParllXScroll from "./components/ParllXScroll";
 import OneService from "./components/OneService";
 import { ArrowUp } from "lucide-react";
 import Pricing from "./components/Pricing";
+import Faqs from "./components/Faqs";
+import Footer from "./components/Footer";
+
+
 
 
 
@@ -29,7 +33,7 @@ export default function App() {
 
   return (
     <> 
-    <div className="min-[100vh]  bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end justify-between items-center pb-10 ">
+    <div className="min-[100vh] md:h-screen  bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end justify-between items-center pb-10 ">
       <NavBar isScrolled={isScrolled} />
       <HeroBanner />
     </div>
@@ -38,8 +42,10 @@ export default function App() {
      <ParllXScroll />
      <OneService />
      <Pricing />
+     <Faqs />
+     <Footer />
      
-     {isScrolled ? <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed bottom-5 cursor-pointer right-5 z-50 text-white bg-primery-blue p-2 rounded-md"> <ArrowUp /> </button>: null }
+     {isScrolled ? <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed bottom-14 cursor-pointer right-5 z-50 text-white bg-primery-blue p-2 rounded-md"> <ArrowUp /> </button>: null }
      
     </>
    

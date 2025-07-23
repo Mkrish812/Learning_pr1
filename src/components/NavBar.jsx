@@ -16,7 +16,7 @@ export default function NavBar({ isScrolled }) {
         } hidden md:flex justify-between px-5 py-5 fixed r-0 t-0 w-[100vw] transition-all duration-700 ease-in-out `}
       >
         <Link to={"#"}>
-          <img src="/assets/logo.png" className="h-7" alt="" />
+         <h1 className="font-bold text-white text-2xl">New<span className="text-primery-blue">World</span> </h1>
         </Link>
         <div className="flex gap-5 items-center text-white">
           <Link className="hover:text-primery-blue " to={"#"}>
@@ -35,19 +35,18 @@ export default function NavBar({ isScrolled }) {
             Pricing
           </Link>
         </div>
-        <button className="flex cursor-pointer justify-center items-center bg-blue-500 rounded-md px-3 py-1 gap-2 text-white font-bold ">
+        <button className="flex cursor-pointer justify-center items-center bg-primery-blue rounded-md px-3 py-1 gap-2 text-white font-bold ">
           <ArrowDownToLine strokeWidth={1.5} size={15} /> Download
         </button>
       </nav>
 {/* Mobile nav bar */}
       <nav
         className={`${
-          isScrolled ? "bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end shadow-md  " : "bg-transparent"
+          isScrolled ? "bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end shadow-md" : "bg-transparent"
         } transition-all duration-700 ease-in-out flex justify-between  px-5 py-5 fixed r-0 t-0 w-[100vw] md:hidden z-40 `}
       >
         <Link to={"#"}>
-          {" "}
-          <img src="/assets/logo.png" className="h-7" alt="" />
+                 <h1 className="font-bold text-white text-2xl">New<span className="text-primery-blue">World</span> </h1>
         </Link>
 
         <Menu onClick={() => setMenu(true)} className="text-white " />
