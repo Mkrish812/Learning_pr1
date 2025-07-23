@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;300;400;500;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+@theme {
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-primery-blue: #5c87ff;
+  --color-custom-start: #07070a;  
+  --color-custom-middle: #11103d; 
+  --color-custom-end: #1a176e; 
+}
