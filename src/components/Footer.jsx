@@ -5,7 +5,7 @@ import { Element } from 'react-scroll';
 
 export default function Footer() {
   return (
-    <footer className="bg-foot py-10 md:py-20  px-5 gap-10 md:px-20 flex flex-col flex-wrap lg:flex-row text-gray-300 relative ">
+    <footer className=" bg-custom-middle    py-10 md:py-20  px-5 gap-10 md:px-20 flex flex-col flex-wrap lg:flex-row text-gray-300 relative ">
       <div className="flex flex-col text-sm gap-2 max-w-md ">
         <h1 className="font-bold text-white text-2xl">
           New<span className="text-primery-blue">World</span>
@@ -49,7 +49,7 @@ export default function Footer() {
           <p className="">Terms & Conditions</p>
         </div>
       </div>
-      <div className="bg-gray-900 flex justify-between absolute bottom-0 w-full left-0 px-5 py-3 items-center ">
+      <div className="bg-custom-middle border-t-2 flex justify-between absolute bottom-0 w-full left-0 px-5 py-3 items-center ">
         <h1>2025© NewWorld.com</h1>
         <div className="flex gap-3 items-center">
           <Facebook className="p-2 rounded-md size-8 hover:bg-primery-blue" />

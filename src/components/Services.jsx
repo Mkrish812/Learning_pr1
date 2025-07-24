@@ -75,15 +75,15 @@ export default function Services() {
 
       <div className="flex flex-col md:flex-row flex-wrap gap-10 md:gap-y-20 mt-5 md:mt-10 justify-center items-center">
         {services.map((ser) => (
-          <div key={ser.title} className=" flex flex-col gap-2 items-center max-w-80 ">
+          <div key={ser.title} className=" group flex flex-col gap-2 items-center max-w-80 ">
             <div
               className="
-              bg-indigo-100 text-primery-blue p-6 px-7  shadow-2xl
-                rounded-tl-[40%] rounded-tr-[20%] rounded-br-[40%] rounded-bl-[60%] "
+              bg-indigo-100 shadow-black/30 group-hover:scale-105 shadow-md group-hover:shadow-2xl group-hover:bg-custom-end group-hover:text-white text-primery-blue p-6 px-7 
+                rounded-tl-[40%] rounded-tr-[20%] rounded-br-[40%] rounded-bl-[60%] transition-all duration-300 ease-in-out "
             >
               {ser.icon}
             </div>
-            <h1 className="font-bold text-black text-xl ">{ser.title}</h1>
+            <h1 className="font-bold text-black text-xl group-hover:text-custom-end ">{ser.title}</h1>
             <p className="text-center text-gray-500">{ser.description}</p>
           </div>
         ))}

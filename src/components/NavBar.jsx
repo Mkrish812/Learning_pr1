@@ -42,7 +42,7 @@ export default function NavBar({ isScrolled }) {
             smooth={true}
             duration={500}
             activeClass="text-primery-blue border-b-2 border-primery-blue font-bold "
-            className="hover:text-primery-blue capitalize py-1 transition-all duration-200 ease-out  "
+            className="hover:text-primery-blue capitalize py-1 transition-all duration-200 ease-out cursor-pointer "
           >
             {v}
           </Link>
@@ -92,7 +92,7 @@ export default function NavBar({ isScrolled }) {
             smooth={true}
             duration={500}
             activeClass="text-primery-blue border-b-2 border-white  font-bold "
-            className="hover:text-primery-blue text-white mr-auto capitalize py-1 transition-all duration-200 ease-out  "
+            className="hover:text-primery-blue text-white mr-auto capitalize py-1 transition-all duration-200 ease-out cursor-pointer "
           >
             {v}
           </Link>
