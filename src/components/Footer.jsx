@@ -1,9 +1,11 @@
 import { Mail, Phone, Facebook, Twitter, Linkedin, Chrome } from "lucide-react";
 import React from "react";
+import { Element } from 'react-scroll';
+
 
 export default function Footer() {
   return (
-    <footer className="bg-foot py-10 md:py-20  px-5 gap-10 md:px-20 flex flex-col flex-wrap md:flex-row text-gray-300 relative ">
+    <footer className="bg-foot py-10 md:py-20  px-5 gap-10 md:px-20 flex flex-col flex-wrap lg:flex-row text-gray-300 relative ">
       <div className="flex flex-col text-sm gap-2 max-w-md ">
         <h1 className="font-bold text-white text-2xl">
           New<span className="text-primery-blue">World</span>

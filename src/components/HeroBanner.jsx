@@ -1,11 +1,12 @@
 import { Headset, Box } from "lucide-react";
 import React, { useEffect } from "react";
+import { Element } from 'react-scroll';
 
 
 export default function HeroBanner() {
    
   return (
-    <section className=" pt-20 px-5 md:px-20">
+    <Element name="home" className=" pt-20 px-5 md:px-20">
       <div className="flex flex-col gap-5 md:flex-row items-center justify-between  ">
         <div className="flex flex-col gap-2 md:max-w-[60vw]  ">
           <span className=" md:text-2xl text-white ">
@@ -31,6 +32,6 @@ export default function HeroBanner() {
            <div className=" text-xs hidden lg:flex absolute top-32 right-0  gap-3 items-center py-2 px-3 rounded-3xl shadow-lg bg-white "> <Box className="bg-primery-blue text-white size-7 p-2 rounded-full " /> <span className="">Express Delivery Service</span> </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 }

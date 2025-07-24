@@ -1,6 +1,8 @@
 import { MoveRight, Check, Layers, Lock } from "lucide-react";
 import React from "react";
 import { Link } from "react-router";
+import { Element } from 'react-scroll';
+
 
 export default function FocusedOn() {
   const context = [
@@ -25,7 +27,7 @@ export default function FocusedOn() {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row justify-center md:justify-between py-10 px-10 md:px-40 md:gap-20  mx-auto ">
+    <Element name="features" className="flex flex-col lg:flex-row justify-center lg:justify-between py-10 px-10 lg:px-40 lg:gap-20  mx-auto ">
       <div className="  flex justify-center items-center">
         <img
           className="w-110 rounded-xl shadow-2xl "
@@ -34,7 +36,7 @@ export default function FocusedOn() {
         />
       </div>
 
-      <div className="flex flex-col gap-10 mt-5 lg:max-w-[40vw] md:py-10 ">
+      <div className="flex flex-col gap-10 mt-5 lg:max-w-[40vw] lg:py-10 ">
         <div className="flex flex-col gap-3 ">
           <h1 className="text-primery-blue">Focused on achievind</h1>
           <p className="text-4xl font-semibold">
@@ -66,6 +68,6 @@ export default function FocusedOn() {
           ))}
         </div>
       </div>
-    </section>
+    </Element>
   );
 }

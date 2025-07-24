@@ -9,6 +9,8 @@ import {
   Layout,
   Ticket,
 } from "lucide-react";
+import { Element } from "react-scroll";
+
 
 export default function Pricing() {
   const pricingPlans = [
@@ -57,7 +59,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center py-16 px-5 ">
+    <Element name="pricing" className="flex flex-col justify-center items-center py-16 px-5 ">
       <h1 className="text-primery-blue">Pricing</h1>
       <p className="text-2xl font-semibold text-center">
         Get the power of the professional services with the simple price
@@ -93,11 +95,11 @@ export default function Pricing() {
 
       <p className="text-gray-500">Save up to 15% with Annual Plan.</p>
 
-      <div className="flex flex-col md:px-10   md:flex-row w-full  gap-10 md:gap-y-20 mt-5 md:mt-10 justify-center items-center ">
+      <div className="flex flex-col md:px-10 md:flex-wrap  md:flex-row w-full  gap-10 md:gap-y-20 mt-5 md:mt-10 justify-center items-center ">
         {pricingPlans.map((prc) => (
           <div
             key={prc.name}
-            className=" flex relative flex-col md:flex-1 w-full py-10 px-5 gap-2 items-center h-150 rounded-xl shadow-2xl   "
+            className=" flex relative flex-col md:flex-1 w-full md:min-w-xs  py-10 px-5 gap-2 items-center h-150 rounded-xl shadow-2xl   "
           >
             <img className=" w-28 " src={prc.image} alt="" />
             <h1 className="text-2xl font-bold ">{prc.name}</h1>
@@ -122,6 +124,6 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-    </section>
+    </Element>
   );
 }

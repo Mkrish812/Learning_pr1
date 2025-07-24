@@ -1,6 +1,8 @@
 import { Smartphone, File, Rocket, Lock } from "lucide-react";
 import React from "react";
 import { Link } from "react-router";
+import { Element } from "react-scroll";
+
 
 export default function OneService() {
   const context = [
@@ -28,7 +30,7 @@ export default function OneService() {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row justify-center md:justify-between py-10 px-10 md:px-40 md:gap-20  mx-auto ">
+    <Element name="about" className="flex flex-col lg:flex-row justify-center md:justify-between py-10 px-10 md:px-40 md:gap-20  mx-auto ">
           <div className="flex flex-col gap-10 mt-5 lg:max-w-[40vw] md:py-10 ">
         <div className="flex flex-col gap-3 ">
           <h1 className="text-primery-blue">Services</h1>
@@ -71,6 +73,6 @@ export default function OneService() {
       </div>
 
  
-    </section>
+    </Element>
   );
 }

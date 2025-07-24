@@ -14,3 +14,14 @@
   --color-custom-middle: #11103d; 
   --color-custom-end: #1a176e; 
 }
+
+.hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;  
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+

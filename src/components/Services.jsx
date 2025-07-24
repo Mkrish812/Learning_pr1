@@ -9,6 +9,8 @@ import {
   Layout,
 } from "lucide-react";
 import React from "react";
+import { Element } from 'react-scroll';
+
 
 export default function Services() {
   const services = [
@@ -62,7 +64,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center py-16 px-5 ">
+    <Element name="services" className="flex flex-col justify-center items-center py-16 px-5 ">
       <h1 className="text-primery-blue">Services</h1>
       <p className="text-2xl font-semibold text-center">
         Build a customer - centric marketing strategy
@@ -86,6 +88,6 @@ export default function Services() {
           </div>
         ))}
       </div>
-    </section>
+    </Element>
   );
 }
