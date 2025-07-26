@@ -10,6 +10,11 @@ import Pricing from "./components/Pricing";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
 import OurClient from "./components/Testimonials";
+import Companies from "./components/Companies";
+import Blogs from "./components/Blogs";
+import Contact from "./components/Contact";
+
+
 
 export default function App() {
   const [isScrolled, setScrolled] = useState(false);
@@ -37,7 +42,11 @@ export default function App() {
       <Pricing />
       <Faqs />
       <OurClient />
+      <Companies />
+      <Blogs />
+      <Contact />
       <Footer />
+      
 
       {isScrolled ? (
         <button

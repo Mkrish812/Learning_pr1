@@ -45,9 +45,9 @@ export default function OurClient() {
 
   return (
     <Element name="testimonials" className="flex flex-col w-full justify-center items-center py-16 px-5 bg-white  ">
-      <h1 className="text-primery-blue">FAQs</h1>
+      <h1 className="text-primery-blue">Clients</h1>
       <p className="text-2xl font-semibold text-center">
-        Frequently Asked Questions
+      Clients review
       </p>
 
       <div className="flex  md:px-20 w-full py-10 ">
