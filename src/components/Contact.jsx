@@ -69,7 +69,7 @@ export default function Contact() {
       </div>
 
       <div className="flex justify-center items-center mt-7 mx-5  ">
-        <form className="flex flex-1 flex-row flex-wrap gap-5 bg-white px-5 md:px-10 rounded-md py-10 relative pb-20">
+        <form className="flex flex-1 flex-row flex-wrap gap-5 bg-white px-5 md:px-10 rounded-md py-10 relative pb-20 shadow-lg shadow-black/20 ">
           <div className="flex flex-col gap-2 md:min-w-80 flex-1">
             <label className="text-sm font-bold" htmlFor="firstName">
               Frist Name
@@ -85,7 +85,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-2 md:min-w-80 flex-1">
             <label className="text-sm font-bold" htmlFor="lastName">
-              Frist Name
+              Last Name
             </label>
             <input
               name="lastName"
@@ -98,7 +98,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-2 md:min-w-80 flex-1">
             <label className="text-sm font-bold" htmlFor="emailId">
-              Frist Name
+              Email ID
             </label>
             <input
               name="emailId"
@@ -111,7 +111,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-2 md:min-w-80 flex-1">
             <label className="text-sm font-bold" htmlFor="phonNo">
-              Frist Name
+              Phone No
             </label>
             <input
               name="phonNo"
@@ -124,7 +124,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-2 md:min-w-80 flex-1">
             <label className="text-sm font-bold" htmlFor="message">
-              Frist Name
+             Message
             </label>
 
             <textarea
