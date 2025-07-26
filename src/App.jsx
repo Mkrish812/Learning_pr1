@@ -51,7 +51,7 @@ export default function App() {
       {isScrolled ? (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-14 cursor-pointer right-5 z-50 text-white bg-primery-blue p-2 rounded-md"
+          className="fixed bottom-14 cursor-pointer right-5 z-50 text-white bg-custom-end p-2 rounded-md"
         >
           <ArrowUp />
         </button>

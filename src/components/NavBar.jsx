@@ -24,7 +24,7 @@ export default function NavBar({ isScrolled }) {
           isScrolled
             ? "bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end shadow-md z-50 "
             : "bg-transparent"
-        } hidden lg:flex justify-between px-5 py-5 fixed r-0 t-0 w-[100vw] transition-all duration-700 ease-in-out `}
+        } hidden lg:flex justify-between px-10 py-5 fixed r-0 t-0 w-[100vw] transition-all duration-700 ease-in-out items-center `}
       >
         <Link to="home">
           <h1 className="font-bold text-white text-2xl">
@@ -47,7 +47,7 @@ export default function NavBar({ isScrolled }) {
             </Link>
           ))}
         </div>
-        <button className="flex cursor-pointer justify-center items-center bg-primery-blue rounded-md px-3 py-1 gap-2 text-white font-bold ">
+        <button className="flex cursor-pointer justify-center items-center bg-gradient-to-tr from-custom-start  to-custom-end rounded-md px-3 py-1 gap-2 text-white  ">
           <ArrowDownToLine strokeWidth={1.5} size={15} /> Download
         </button>
       </nav>
