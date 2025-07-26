@@ -7,17 +7,15 @@ export default function NavBar({ isScrolled }) {
   const [isMenu, setMenu] = useState(false);
 
   const deskNav = [
-  "home",
-  "services",
-  "features",
-  "about",
-  "pricing",
-  "testimonials",
-  "blog",
-  "contact"
-]
-
-
+    "home",
+    "services",
+    "features",
+    "about",
+    "pricing",
+    "testimonials",
+    "blog",
+    "contact",
+  ];
 
   return (
     <>
@@ -33,20 +31,21 @@ export default function NavBar({ isScrolled }) {
             New<span className="text-primery-blue">World</span>{" "}
           </h1>
         </Link>
-       
+
         <div className="flex gap-7 items-center text-white">
-           {deskNav.map((v)=>(
-           <Link
-            to={v}
-            spy={true}
-            smooth={true}
-            duration={500}
-            activeClass="text-primery-blue border-b-2 border-primery-blue font-bold "
-            className="hover:text-primery-blue capitalize py-1 transition-all duration-200 ease-out cursor-pointer "
-          >
-            {v}
-          </Link>
-        )) }
+          {deskNav.map((v) => (
+            <Link
+              key={v}
+              to={v}
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="text-primery-blue border-b-2 border-primery-blue font-bold "
+              className="hover:text-primery-blue capitalize py-1 transition-all duration-200 ease-out cursor-pointer "
+            >
+              {v}
+            </Link>
+          ))}
         </div>
         <button className="flex cursor-pointer justify-center items-center bg-primery-blue rounded-md px-3 py-1 gap-2 text-white font-bold ">
           <ArrowDownToLine strokeWidth={1.5} size={15} /> Download
@@ -85,18 +84,19 @@ export default function NavBar({ isScrolled }) {
             isMenu ? "flex opacity-100 w-[60vw] px-5" : "w-0 overflow-hidden "
           } flex-col gap-5 py-10 `}
         >
-         {deskNav.map((v)=>(
-           <Link
-            to={v}
-            spy={true}
-            smooth={true}
-            duration={500}
-            activeClass="text-primery-blue border-b-2 border-white  font-bold "
-            className="hover:text-primery-blue text-white mr-auto capitalize py-1 transition-all duration-200 ease-out cursor-pointer "
-          >
-            {v}
-          </Link>
-        )) }
+          {deskNav.map((v) => (
+            <Link
+              key={v}
+              to={v}
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="text-primery-blue border-b-2 border-white  font-bold "
+              className="hover:text-primery-blue text-white mr-auto capitalize py-1 transition-all duration-200 ease-out cursor-pointer "
+            >
+              {v}
+            </Link>
+          ))}
           <button className="flex cursor-pointer justify-center items-center bg-primery-blue rounded-md px-3 py-1 gap-2   text-white mr-auto ">
             <ArrowDownToLine strokeWidth={1.5} size={15} /> Download
           </button>

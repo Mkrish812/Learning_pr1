@@ -15,6 +15,18 @@ export default function Contact() {
   const handelChange = (e) => {
     setContactData({ ...contactData, [e.target.name]: e.target.value });
   };
+  const handelSubmit = (e) => {
+     e.preventDefault();
+    console.log(contactData); 
+    setContactData({
+    firstName: "",
+    lastName: "",
+    emailId: "",
+    phonNo: "",
+    message: "",
+  });
+  };
+  
   const contactInfo = [
     {
       title: "123 King Street, London W60 10250",
@@ -124,7 +136,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-2 md:min-w-80 flex-1">
             <label className="text-sm font-bold" htmlFor="message">
-             Message
+              Message
             </label>
 
             <textarea
@@ -138,7 +150,9 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <button className="py-2 px-5 flex gap-3 absolute bottom-5 left-5 bg-custom-end text-white rounded-md text-sm  justify-center items-center cursor-pointer ">
+          <button 
+          onClick={handelSubmit}
+          className="py-2 px-5 flex gap-3 absolute bottom-5 left-5 bg-custom-end text-white rounded-md text-sm  justify-center items-center cursor-pointer ">
             <Send strokeWidth={1} size={15} /> Send Message
           </button>
         </form>
