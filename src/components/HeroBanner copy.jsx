@@ -1,7 +1,6 @@
 import { Headset, Box } from "lucide-react";
 import React, { useEffect } from "react";
 import { Element } from "react-scroll";
-import hero from '../assets/feature.jpg';
 
 
 export default function HeroBanner() {
@@ -30,7 +29,7 @@ export default function HeroBanner() {
           </div>
         </div>
         <div className="relative z-0">
-          <img src={hero} className="w-72 lg:mr-20" alt="" />
+          <img src="assets/furniture.png" className="w-72 lg:mr-20" alt="" />
           <div
             className=" text-xs hidden lg:flex absolute bottom-32 -left-28 group gap-3 items-center py-2 px-3 rounded-3xl shadow-lg
              bg-white 
