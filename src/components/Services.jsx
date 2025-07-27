@@ -9,8 +9,7 @@ import {
   Layout,
 } from "lucide-react";
 import React from "react";
-import { Element } from 'react-scroll';
-
+import { Element } from "react-scroll";
 
 export default function Services() {
   const services = [
@@ -64,7 +63,10 @@ export default function Services() {
   ];
 
   return (
-    <Element name="services" className="flex flex-col justify-center items-center py-16 px-5 ">
+    <Element
+      name="services"
+      className="flex flex-col justify-center items-center py-16 px-5 "
+    >
       <h1 className="text-primery-blue">Services</h1>
       <p className="text-2xl font-semibold text-center">
         Build a customer - centric marketing strategy
@@ -72,18 +74,23 @@ export default function Services() {
       <p className="text-gray-500 ">
         Ligula risus auctor tempus magna feugit lacinia.
       </p>
-
+      {/* rounded-tl-[40%] rounded-tr-[20%] rounded-br-[40%] rounded-bl-[60%] */}
       <div className="flex flex-col md:flex-row flex-wrap gap-10 md:gap-y-20 mt-5 md:mt-10 justify-center items-center">
         {services.map((ser) => (
-          <div key={ser.title} className=" group flex flex-col gap-2 items-center max-w-80 ">
+          <div
+            key={ser.title}
+            className=" group flex flex-col gap-2 items-center max-w-80 "
+          >
             <div
               className="
               bg-indigo-100 shadow-black/30 group-hover:scale-105 shadow-md group-hover:shadow-2xl group-hover:bg-custom-end group-hover:text-white text-primery-blue p-6 px-7 
-                rounded-tl-[40%] rounded-tr-[20%] rounded-br-[40%] rounded-bl-[60%] transition-all duration-300 ease-in-out "
+                rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] transition-all duration-300 ease-in-out "
             >
               {ser.icon}
             </div>
-            <h1 className="font-bold text-black text-xl group-hover:text-custom-end ">{ser.title}</h1>
+            <h1 className="font-bold text-black text-xl group-hover:text-custom-end ">
+              {ser.title}
+            </h1>
             <p className="text-center text-gray-500">{ser.description}</p>
           </div>
         ))}
