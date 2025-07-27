@@ -1,7 +1,7 @@
 import { Headset, Box } from "lucide-react";
 import React, { useEffect } from "react";
 import { Element } from "react-scroll";
-import hero from '../assets/feature.jpg';
+import hero from '../assets/furniture.png';
 
 
 export default function HeroBanner() {
