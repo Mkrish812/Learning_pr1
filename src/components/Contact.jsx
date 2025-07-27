@@ -50,7 +50,7 @@ export default function Contact() {
 
   return (
     <Element
-      name="about"
+      name="contact"
       className="flex flex-col lg:flex-row justify-center md:justify-between py-10  md:gap-20  mx-auto bg-[#f7f9fa] "
     >
       <div className="flex flex-col gap-10 mt-5 lg:max-w-[40vw] md:py-10 px-10 md:px-40 ">
