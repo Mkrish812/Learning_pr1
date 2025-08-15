@@ -7,7 +7,7 @@ export default function ParllXScroll() {
   return (
     <div className="h-[60vh] overflow-y-hidden relative">
       <SimpleParallax  >
-        <img className=" w-screen h-[70vh] object-center" src={parlImg} alt="image" />
+        <img className=" w-screen h-[70vh] object-center" loading="lazy" src={parlImg} alt="image" />
       </SimpleParallax>
       <div className='bg-custom-end/60  text-white flex flex-col gap-5 absolute inset-0 px-5 py-10 justify-center items-center '>
         <h1 className='text-2xl font-bold text-center '>A Detailed Examination Of A Specific Case</h1>

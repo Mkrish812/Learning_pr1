@@ -14,8 +14,6 @@ import Companies from "./components/Companies";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 
-
-
 export default function App() {
   const [isScrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -46,8 +44,6 @@ export default function App() {
       <Blogs />
       <Contact />
       <Footer />
-      
-
       {isScrolled ? (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -10,8 +10,8 @@ export default function HeroBanner() {
       name="home"
       className="  pt-20 px-5 md:px-20 lg:min-h-screen  bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end "
     >
-      <div className="flex flex-col py-10 lg:py-0 gap-5 md:flex-row items-center justify-between  ">
-        <div className="flex flex-col gap-2 md:max-w-[60vw]  ">
+        <div className="flex flex-col py-10 lg:py-0 gap-5 md:flex-row items-center justify-between  ">
+        <div className="flex flex-col gap-2 md:max-w-[60vw]">
           <span className=" md:text-2xl text-white ">
             The Best Online Furniture Store
           </span>

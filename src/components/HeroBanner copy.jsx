@@ -1,6 +1,7 @@
 import { Headset, Box } from "lucide-react";
 import React, { useEffect } from "react";
 import { Element } from "react-scroll";
+import hero from '../assets/furniture.png';
 
 
 export default function HeroBanner() {
@@ -9,7 +10,9 @@ export default function HeroBanner() {
       name="home"
       className="  pt-20 px-5 md:px-20 lg:min-h-screen  bg-gradient-to-r from-custom-start  via-custom-middle to-custom-end "
     >
-      <div className="flex flex-col py-10 lg:py-0 gap-5 md:flex-row items-center justify-between  ">
+
+      <div className="container mx-auto ">
+        <div className="flex flex-col py-10 lg:py-0 gap-5 md:flex-row items-center justify-between  ">
         <div className="flex flex-col gap-2 md:max-w-[60vw]  ">
           <span className=" md:text-2xl text-white ">
             The Best Online Furniture Store
@@ -29,7 +32,7 @@ export default function HeroBanner() {
           </div>
         </div>
         <div className="relative z-0">
-          <img src="assets/furniture.png" className="w-72 lg:mr-20" alt="" />
+          <img src={hero} className="w-72 lg:mr-20" alt="" />
           <div
             className=" text-xs hidden lg:flex absolute bottom-32 -left-28 group gap-3 items-center py-2 px-3 rounded-3xl shadow-lg
              bg-white 
@@ -52,6 +55,8 @@ export default function HeroBanner() {
           </div>
         </div>
       </div>
+      </div>
+      
     </Element>
   );
 }
